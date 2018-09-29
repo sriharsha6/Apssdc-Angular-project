@@ -1,0 +1,13 @@
+<p>
+  two works!
+</p>
+<h1>{{title}}</h1>
+
+
+<ul>
+  <li *ngFor="let course of courses">
+    {{course}}
+  </li>
+</ul>
+<div *ngIf="show; else elseBlock">Text to show</div>
+<ng-template #elseBlock>Alternate text while primary text is hidden</ng-template>
